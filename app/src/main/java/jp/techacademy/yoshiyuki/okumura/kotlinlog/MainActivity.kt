@@ -9,11 +9,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // クラス
-        val Human = Human("yoshi", 39)      // 名前をyoshi、年齢39歳で、Humanのインスタンスを作る
+//        クラス
+        val human = Human("yoshi", 39,"オリンピック" ) //名前をyoshi、年齢39歳、hobbyで、Humanのインスタンスを作る
 
-        Human.say()
-        Log.d("kotlintest", "私の名前は" + Human.name + "です。")
-        Log.d("kotlintest", "年は" + Human.age + "歳です。")
+        human.say()
+//        Log.d("kotlintest", "わたしの名前は" + human.name + "です。")
+//        Log.d("kotlintest", "年は" + human.age + "歳です。")
+
+        human.think()
     }
-    }
+}
